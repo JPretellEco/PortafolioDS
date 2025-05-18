@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTAFOLIO DATA SCIENCE</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon.jpg"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+        <!-- Agregamos tsparticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box" style="border-radius: 50%">
+            <img
+              src="./yo.png"
+              alt="Richard hanrick"
+              width="80"
+              style="border-radius: 50%"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Jeffersson Pretell</h1>
+
+            <p class="title">Estudiante de Economía</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Mostrar Contactos</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Correo Electrónico</p>
+                <a
+                  href="mailto:jpretell66@gmail.com"
+                  class="contact-link"
+                  >jpretell66@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Teléfono</p>
+                <a href="tel:+51929796785" class="contact-link"
+                  >+51 929-796-785</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Fecha de Nacimiento</p>
+                <time datetime="2002-10-27">02 de Agosto de 2000</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Ubicación</p>
+                <address>Trujillo, La Libertad, Perú</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href=""
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/jefferssonpretell/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/JPretellEco"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Inicio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Estudios</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Experiencia</button>
+            </li>
+            
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Proyectos</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contáctame</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="inicio active" data-page="inicio">
+          <header>
+            <h2 class="h2 article-title">Inicio</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Estudiante de pregrado de economía con muchas ganas de aprender.
+            </p>
+
+            <p>
+              📢 Soy un estudiante apasionado de Economía, Matemáticas, Programación y Estadística. Mi objetivo es convertirme en un profesional integral en estas áreas, capaz de analizar y resolver problemas complejos utilizando técnicas avanzadas de análisis de datos y modelado.
+            </p>
+
+            
+  <ul>
+    <li><strong>✔️ Python especializado en datos</li>
+    <li><strong>✔️ </strong>  Linea Ciencia de Datos e IA. 🏆📊🤖</li>
+  </ul>
+
+            <style>
+              .buttons-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                margin: 20px 0;
+                flex-wrap: wrap; /* Permite que los botones se envuelvan en líneas nuevas si es necesario */
+              }
+
+              .form-btn {
+                margin: 10px;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+
+              .form-btn ion-icon {
+                margin-right: 5px;
+              }
+
+              @media (max-width: 600px) {
+                .buttons-container {
+                  align-items: center;
+                  justify-content: center;
+                  margin-left: 20px;
+                  margin-right: 30px;
+                  flex-direction: column; /* Cambia la dirección a columna en pantallas más pequeñas */
+                }
+              }
+            </style>
+           
+            <div class="buttons-container">
+              <a href="./assets/doc/CV - el economistael economista - ESPAÑOL.pdf" target="_blank">
+              <button class="form-btn">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Descargar CV - Español</span>
+              </button>
+            </a>
+              <a href="./assets/doc/CV - el economistael economista - INGLES.pdf" target="_blank">
+                <button class="form-btn">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Download CV - Inglés</span>
+              </button>
+            
+              
+            </div>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service" >
+            <h3 class="h3 service-title">Tecnologías Utilizadas</h3>
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Domino las siguientes tecnologías para programación web:</span>
+<!-- para movimiento id="clientsList" -->
+            <ul class="clients-list has-scrollbar" >
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./html-5.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Html5</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./css-3.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Css3</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./javascript.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">JavaScript</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./python.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Python</span>
+              </li>
+            </ul>
+            <br>
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Domino las siguientes librerías para Machine Learning:</span>
+
+            <ul class="clients-list has-scrollbar" >
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./numpy.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Numpy</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./pandas.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Pandas</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./seaborn-1.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Seaborn</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./sklearn.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Scikit-learn</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./tensorflow-2.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Tensorflow</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./mlflow.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">MLFlow</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./flask.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Flask</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./streamlit.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Streamlit</span>
+              </li>
+
+              <li class="clients-item">
+                  <img
+                    height="140px"
+                    src="./assets/tech/sequelize.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Pyplot</span>
+              </li>
+
+              <li class="clients-item">
+                  <img 
+                    src=""
+                    alt=""
+                  />
+              </li>
+            </ul>
+
+            <br>
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Domino las siguientes Base de datos:</span>
+
+            <ul class="clients-list has-scrollbar" >
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./postgresql.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">PostgreSQL</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./mysql.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">MySQL</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./mongodb.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">MongoDB</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./sqlserver.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">SQL Server</span>
+              </li>
+
+              <li class="clients-item">
+                  <img 
+                    src=""
+                    alt=""
+                  />
+              </li>
+            </ul>
+
+            <br>
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Domino los siguientes Servicios en la Nube:</span>
+
+            <ul class="clients-list has-scrollbar" >
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./aws.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">AWS</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./dbs.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Databricks</span>
+              </li>
+            </ul>
+
+    
+            <span style="color: rgb(155, 149, 149); font-family: 'Arial', sans-serif; font-weight: bold; font-size: 16px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Otras Tecnologias</span>
+
+            <ul class="clients-list has-scrollbar" >
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./github-142-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Git</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./github-octocat-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">GitHub</span>
+              </li>
+
+            <li class="clients-item" >
+              <img
+                height="140px"
+                src="./notion-svgrepo-com.svg"
+                alt="client logo"
+              />
+              <span style="color: wheat; text-align: center; font-size: 20px;">Notion</span>
+          </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./scrum-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Scrum</span>
+              </li>
+
+              <li class="clients-item" >
+                  <img
+                    height="140px"
+                    src="./figma-svgrepo-com.svg"
+                    alt="client logo"
+                  />
+                  <span style="color: wheat; text-align: center; font-size: 20px;">Figma</span>
+              </li>
+
+              <li class="clients-item">
+                  <img 
+                    src=""
+                    alt=""
+                  />
+              </li>
+            </ul>
+            
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonios</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel Avila"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mi abuelita  
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Jeffersson Pretellmostró una habilidad impresionante en el
+                      desarrollo de sistemas web. Su conocimiento técnico y
+                      capacidad para solucionar problemas complejos fueron clave
+                      en nuestros proyectos. Su dedicación y profesionalismo lo
+                      hacen destacar como un desarrollador confiable y
+                      eficiente.
+                      <br />
+                      <b>— Gerente de Proyectos (Hi – Net International)</b>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Anthony Vicente"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Tec. Anthony Vicente
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Trabajar con Jeffersson Pretellfue una experiencia muy positiva.
+                      Su capacidad para integrar nuevas tecnologías y mejorar
+                      nuestros sistemas existentes fue invaluable. Siempre
+                      estaba dispuesto a colaborar y encontrar soluciones
+                      innovadoras para los desafíos que enfrentábamos.
+                      <br />
+                      <b>— Director General (Hi – Net International)</b>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/test1.jpg"
+                      alt="Alex Pacheco"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mg. Alex Pacheco
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Durante su tiempo en la empresa, Jeffersson Pretellse desempeñó
+                      como Full Stack Developer y DevOps Developer. Su notable
+                      capacidad técnica y su liderazgo fueron cruciales para el
+                      éxito de nuestros proyectos. Su dedicación y habilidad
+                      para resolver problemas complejos han dejado una impresión
+                      duradera en nuestro equipo.<br />
+                      <b>— Director General (Perú Travels Team S.A.C)</b>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Marcos Manrique"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Ing. Marcos Manrique
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Jeffersson Pretelldemostró una excelente capacidad para diseñar e
+                      implementar soluciones innovadoras. Su habilidad para
+                      trabajar bajo presión y su compromiso con la calidad
+                      fueron clave para el éxito de nuestros proyectos
+                      tecnológicos. Su profesionalismo y habilidades técnicas
+                      superaron nuestras expectativas.
+                      <br />
+                      <b
+                        >— Director del Área de TI (Ministerio Público de
+                        Cañete)</b
+                      >
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/test4.jpg"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Ing. el economistaJollja
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Jeffersson Pretell  Torres es un profesional excepcional,
+                      comprometido con la excelencia y la innovación. Su
+                      capacidad para resolver problemas complejos y su atención
+                      al detalle han sido fundamentales en el éxito de nuestros
+                      proyectos. Ha sido un placer trabajar con alguien tan
+                      dedicado y talentoso.
+                      <br />
+                      <b
+                        >— CEO de Softaki - Consultora de Tecnología e
+                        Innovación</b
+                      >
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure
+                    class="testimonials-avatar-box"
+                    style="border-radius: 50%"
+                  >
+                    <img
+                      src="./assets/images/test5.jpg"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                      style="border-radius: 50%"
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Ing. Jhonatan Echaccaya
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      el economistael economista es un profesional sobresaliente
+                      que ha demostrado un talento excepcional para desarrollar
+                      soluciones tecnológicas innovadoras. Su habilidad para
+                      adaptarse rápidamente a nuevos desafíos y su enfoque
+                      meticuloso para garantizar resultados de alta calidad lo
+                      convierten en una elección ideal para cualquier startup.
+                      Su contribución ha sido invaluable en nuestro equipo,
+                      siempre aportando ideas frescas y eficientes que han
+                      mejorado significativamente nuestros procesos.
+                      <br />
+                      <b>— CEO de Rumba77 - Startup</b>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <!-- <time datetime="2021-06-14">14 June, 2021</time> -->
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Empresas Apoyadas </h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <img
+                  height="130px" width="200px"
+                  src="./datagrep_cover.jfif"
+                  alt="client logo"
+                />
+            </li>
+
+            
+
+              <li class="clients-item">
+                  <img src="" alt="" />
+              </li>
+              <!-- <li class="clients-item">
+                <a href="#">
+                  <img width="190px"
+                    src="./assets/images/empresa7.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li> -->
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #Estudios
+      -->
+
+        <article class="estudios" data-page="estudios">
+          <header>
+            <h2 class="h2 article-title">Estudios</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Educacion</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Datacamp
+                </h4>
+
+                <span>Marzo 2025 — Actualidad</span>
+                <p class="timeline-text">Data Scientist Professional</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Edteam
+                </h4>
+
+                <span>Octubre 2024 — Diciembre 2024</span>
+
+                <p class="timeline-text">
+                  Metdologías ágiles con Scrum
+                </p>
+                                <p class="timeline-text">
+                  Git & Github
+                </p>
+                                <p class="timeline-text">
+                  Bases de datos para desarrolladores
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Universidad Nacional de Ingeniería - Lima 
+                </h4>
+
+                <span>Octubre 2024 — Febrero 2025</span>
+
+                <p class="timeline-text">Fundamentos de Cloud Computing</p>
+                <p class="timeline-text">Procesamiento de imágenes con OPEN Cv</p>
+                <p class="timeline-text">Machine Learning con Python</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Universidad Nacional de Trujillo</h4>
+
+                <span>Mayo 2021 — Actualidad </span>
+
+                <p class="timeline-text">VII Ciclo de la Escuela Profesional de Economía</p>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #Experiencia
+      -->
+        <article class="experiencia" data-page="experiencia"> 
+          <header>
+            <h2 class="h2 article-title">Experiencia</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experiencia</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Datagrowth Comunity - Lima</h4>
+
+                <span>Agosto 2024 – Noviembre 2024</span>
+
+                <p class="timeline-text">
+                  Generar material educativo y atractivo que fomente la comprensión y el interés en los servicios de la empresa.
+                </p>
+                
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="proyectos" data-page="proyectos">
+          <header>
+            <h2 class="h2 article-title">Proyectos</h2>
+          </header>
+
+          <section class="projects">
+
+            <div class="filter-select-box" style="display: none;">
+              <button class="filter-select" data-select>
+                <!-- <div class="select-value" data-selecct-value> -->
+                  <!-- Select category -->
+                <!-- </div> -->
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+            </div>
+
+            <ul class="project-list">
+
+              <li class="project-item active" data-filter-item data-category="web development"  >
+                <a href="#" onclick="openModal('modal2025_7')">
+                  <figure class="project-img" >
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./opencv.jpeg"  alt="finance" loading="lazy" class="proyectos"  />
+                  </figure>
+                  <h3 class="project-title">DETECCIÓN DE ROSTROS CON OPEN CV </h3>
+                </a>
+              </li>
+              <!-- Para más proyectos agregar -->
+
+            </ul>
+
+            <div id="modal2025_7" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2025_7')">&times;</span>
+                <div class="modal-left">
+                  <video src="./WhatsApp Video 2025-05-08 at 3.48.05 AM.mp4 "  muted autoplay loop ></video>
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">DETECCIÓN DE ROSTROS CON OPEN CV</h2>
+                  <p>Script básico en Python para detectar rostros con modelos ya entrenados listos para detección de rostros de forma práctica.</p>
+                  
+                   <p><b>Tecnologías usadas:</b></p>
+                    <p style="color: #1E90FF;">#Python #OpenCv</p>
+                </div>
+              </div>
+          </div>
+          <!-- A QUÍ DEBES AGREGAR EL TEXTO DE CADA PROYECTO-->
+
+      
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
+
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
+
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
+
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
+
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contáctame" data-page="contáctame">
+          <header>
+            <h2 class="h2 article-title">Contáctame</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7899.143619316188!2d-79.05009006368684!3d-8.144997131535023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1747531277941!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Datos Generales de Contacto</h3>
+          
+            <form method="POST" enctype="multipart/form-data" class="form" style="display: none;">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullName"
+                  class="form-input"
+                  placeholder="Nombres y Apellidos"
+                  disabled
+                  data-form-input
+                />
+              
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Correo Electrónico"
+                  disabled
+                  data-form-input
+                />
+              </div>
+            
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Mensaje"
+                disabled
+                data-form-input
+              ></textarea>
+            
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Enviar Mensaje</span>
+              </button>
+            </form>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">&#9993;</div> <!-- Ícono de correo -->
+                <a href="mailto:jpretell66@gmail.com" class="contact-link">jpretell66@gmail.com</a>
+              </div>
+      
+          
+              <div class="contact-item">
+                <div class="contact-icon">&#128222;</div> <!-- Ícono de teléfono -->
+                <a href="tel:+51929796785" class="contact-link">+51 929-796-785</a>
+              </div>
+            </div>
+            <div class="contact-message">
+              <p>¡No dudes en ponerte en contacto conmigo! Estoy aquí para ayudarte con cualquier consulta o proyecto que tengas en mente.</p>
+            </div>
+          </section>
+          
+          <style>
+            /* Estilos para la sección de mensaje motivacional */
+.contact-message {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-message p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Estilo para un efecto de hover en la frase */
+.contact-message p:hover {
+  color: #007BFF;
+  cursor: pointer;
+}
+
+            /* Estilos generales para el contenedor del formulario */
+.contact-form {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.form-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de la información de contacto */
+.contact-info {
+  margin-top: 20px;
+}
+
+
+/* Estilo de los íconos */
+.contact-icon {
+  font-size: 24px;
+  color: #007BFF;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Estilo de los enlaces de contacto */
+.contact-link {
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Efecto hover sobre el ícono y el enlace */
+.contact-icon:hover {
+  color: #0056b3;
+}
+
+.contact-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-icon {
+    margin-bottom: 10px;
+  }
+}
+
+          </style>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+        <!-- Script para cargar las partículas -->
+    <script src="particles.js"></script>
+  </body>
+</html>
