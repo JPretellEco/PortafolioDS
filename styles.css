@@ -1983,3 +1983,57 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding-left: 0;
   }
 
+.blog-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  padding: 60px 20px;
+}
+
+.blog-modal-content {
+  background-color: #1e1e1e;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  color: #ccc;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.modal-meta {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.modal-body p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.close-btn {
+  float: right;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
