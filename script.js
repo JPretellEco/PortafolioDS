@@ -187,3 +187,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
           document.getElementById(modalId).style.display = 'none';
         }
         
+function openBlogModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeBlogModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+// Opcional: cerrar si hace clic fuera del modal
+window.onclick = function(event) {
+  const modals = document.querySelectorAll('.blog-modal');
+  modals.forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+};
