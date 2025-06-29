@@ -251,22 +251,18 @@
                 }
               }
             </style>
-           
-            <div class="buttons-container">
-              <a href="./assets/doc/CV - el economistael economista - ESPAÑOL.pdf" target="_blank">
-              <button class="form-btn">
+           <div class="buttons-container">
+              <a href="./assets/doc/CV - el economistael economista - ESPAÑOL.pdf" target="_blank" class="form-btn">
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Descargar CV - Español</span>
-              </button>
-            </a>
-              <a href="./assets/doc/CV - el economistael economista - INGLES.pdf" target="_blank">
-                <button class="form-btn">
+              </a>
+
+              <a href="./assets/doc/CV - el economistael economista - INGLES.pdf" target="_blank" class="form-btn">
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Download CV - Inglés</span>
-              </button>
-            
-              
-            </div>
+              </a>
+           </div>
+
           </section>
 
           <!--
@@ -1030,40 +1026,54 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="./posts/inflacion_peru_2025.html" class="blog-post-link">
+            <div class="blog-post-link" onclick="openBlogModal('modal-inflacion')">
                 <figure class="blog-banner-box">
-                  <img
+                <img
                     src="./assets/images/blog-inflacion.jpg"
                     alt="Inflación en el Perú 2025: ¿Qué nos espera?"
                     loading="lazy"
-                  />
+                />
                 </figure>
 
                 <div class="blog-content">
-                  <div class="blog-meta">
+                <div class="blog-meta">
                     <p class="blog-category">Economía</p>
                     <span class="dot"></span>
                     <time datetime="2025-06-29">Jun 29, 2025</time>
                     <span class="dot"></span>
                     <span class="blog-author">Jeffersson Pretell</span>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Inflación en el Perú 2025: ¿Qué nos espera?
-                  </h3>
-
-                  <p class="blog-text">
-                    Un análisis profundo del comportamiento de la inflación en el Perú y su impacto en la economía familiar y empresarial.
-                  </p>
-
-                  <p class="read-more">Leer más →</p>
                 </div>
-              </a>
+
+                <h3 class="h3 blog-item-title">
+                    Inflación en el Perú 2025: ¿Qué nos espera?
+                </h3>
+
+                <p class="blog-text">
+                    Un análisis profundo del comportamiento de la inflación en el Perú y su impacto en la economía familiar y empresarial.
+                </p>
+
+                <p class="read-more">Leer más →</p>
+                </div>
+            </div>
             </li>
+
 
             <!-- Copia este bloque para más artículos -->
 
           </ul>
+          <div class="blog-modal" id="modal-inflacion">
+                <div class="blog-modal-content">
+                    <span class="close-btn" onclick="closeBlogModal('modal-inflacion')">&times;</span>
+                    <h2 class="modal-title">Inflación en el Perú 2025: ¿Qué nos espera?</h2>
+                    <p class="modal-meta">Jun 29, 2025 • Economía • Jeffersson Pretell</p>
+                    <div class="modal-body">
+                    <p>La inflación en el Perú ha mostrado tendencias mixtas a lo largo del 2025. En este artículo exploramos los factores clave: la política monetaria del BCRP, la volatilidad de precios internacionales y los efectos del fenómeno de El Niño en la cadena de suministros.</p>
+                    <p>Además, se plantea un análisis crítico de las respuestas gubernamentales, las expectativas inflacionarias y el poder adquisitivo de los hogares peruanos.</p>
+                    <p>Finalmente, se proponen recomendaciones basadas en evidencia para enfrentar los desafíos inflacionarios desde la política pública y la economía del hogar.</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
       </article>
 
@@ -1296,6 +1306,61 @@
   margin-top: 10px;
   display: inline-block;
 }
+.blog-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  padding: 60px 20px;
+}
+
+.blog-modal-content {
+  background-color: #1e1e1e;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  color: #ccc;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.modal-meta {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.modal-body p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.close-btn {
+  float: right;
+  font-size: 28px;
+  color: #999;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 
 
           </style>
