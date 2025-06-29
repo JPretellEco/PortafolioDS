@@ -1030,14 +1030,14 @@
                 <figure class="blog-banner-box">
                 <img
                     src="./assets/images/blog-inflacion.jpg"
-                    alt="Inflación en el Perú 2025: ¿Qué nos espera?"
+                    alt="Cuestionando el train-test"
                     loading="lazy"
                 />
                 </figure>
 
                 <div class="blog-content">
                 <div class="blog-meta">
-                    <p class="blog-category">Economía</p>
+                    <p class="blog-category">Machine Learning</p>
                     <span class="dot"></span>
                     <time datetime="2025-06-29">Jun 29, 2025</time>
                     <span class="dot"></span>
@@ -1045,11 +1045,11 @@
                 </div>
 
                 <h3 class="h3 blog-item-title">
-                    Inflación en el Perú 2025: ¿Qué nos espera?
+                    Revisando la naturaleza del train-test ¿Dónde quedó el muestreo estadístico?
                 </h3>
 
                 <p class="blog-text">
-                    Un análisis profundo del comportamiento de la inflación en el Perú y su impacto en la economía familiar y empresarial.
+                    Opinión mía basada en el cuestionamiento de por qué , utilizar cross-val, después de haber hecho train-test
                 </p>
 
                 <p class="read-more">Leer más →</p>
@@ -1064,12 +1064,14 @@
           <div class="blog-modal" id="modal-inflacion">
                 <div class="blog-modal-content">
                     <span class="close-btn" onclick="closeBlogModal('modal-inflacion')">&times;</span>
-                    <h2 class="modal-title">Inflación en el Perú 2025: ¿Qué nos espera?</h2>
-                    <p class="modal-meta">Jun 29, 2025 • Economía • Jeffersson Pretell</p>
+                    <h2 class="modal-title">Train-test,lo que la validación cruzada no quiere que sepas</h2>
+                    <p class="modal-meta">Jun 29, 2025 • Economía & Machine Learning• Jeffersson Pretell</p>
                     <div class="modal-body">
-                    <p>La inflación en el Perú ha mostrado tendencias mixtas a lo largo del 2025. En este artículo exploramos los factores clave: la política monetaria del BCRP, la volatilidad de precios internacionales y los efectos del fenómeno de El Niño en la cadena de suministros.</p>
-                    <p>Además, se plantea un análisis crítico de las respuestas gubernamentales, las expectativas inflacionarias y el poder adquisitivo de los hogares peruanos.</p>
-                    <p>Finalmente, se proponen recomendaciones basadas en evidencia para enfrentar los desafíos inflacionarios desde la política pública y la economía del hogar.</p>
+                    <p>La división de datos en un 70% para entrenamiento y un 30% para prueba es una práctica común en el aprendizaje automático (machine learning). Esta regla empírica, aunque práctica, ha sido adoptada de manera casi dogmática en muchos     proyectos de ciencia de datos. En este documento proponemos una revisión crítica de dicha práctica, argumentando que su origen responde más a necesidades computacionales e historias asociadas al big data, y que su aplicación indiscriminada puede inducir sesgos serios desde una perspectiva estadística.</p>
+                    <p>En los primeros años del machine learning, los sistemas se aplicaban principalmente sobre grandes volúmenes de datos, tales como imágenes, transacciones financieras y texto masivo. Ante la imposibilidad de realizar validaciones costosas por limitaciones computacionales, se optó por dividir los datos en bloques fijos como 70/30 o 80/20. Este enfoque era tolerable porque las muestras eran suficientemente grandes como para que una sola partición aleatoria fuera representativa</p>
+                      <p>Desde la estadística clásica, el concepto de representatividad exige una selección de muestra basada en el cálculo del tamaño necesario para garantizar ciertos niveles de confianza y errores máximos tolerables. La aplicación arbitraria del 70% ignora estas premisas. No porque se estudie a una fracción significativa del conjunto (por ejemplo, 70 campesinos de 100) se garantiza que los restantes 30 sean correctamente representados. Esto introduce un sesgo muestral que puede afectar la evaluación del modelo.</p>
+                      <p>La validación cruzada (cross-validation) surge como una técnica que mitiga este problema. Al dividir el conjunto de datos en "folds" y rotar sistemáticamente el conjunto de prueba, se reduce tanto el sesgo como la varianza en la estimación del rendimiento del modelo. En particular, K-Fold Cross Validation permite utilizar todo el conjunto de datos en fases de entrenamiento y prueba de forma balanceada, acercándose a una evaluación estadísticamente más robusta.</p>
+                      <p>La regla 70/30, aunque práctica y difundida, debe ser reevaluada críticamente en contextos donde los datos son escasos, desbalanceados o donde el costo del error es alto. En tales situaciones, la validación cruzada ofrece una alternativa superior desde el punto de vista estadístico. Es hora de abandonar el automatismo y adoptar estrategias de evaluación fundamentadas en teoría y evidencia.</p>
                     </div>
                 </div>
             </div>
