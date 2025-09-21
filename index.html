@@ -974,10 +974,6 @@
 
             <div class="filter-select-box" style="display: none;">
               <button class="filter-select" data-select>
-                <!-- <div class="select-value" data-selecct-value> -->
-                  <!-- Select category -->
-                <!-- </div> -->
-
                 <div class="select-icon">
                   <ion-icon name="chevron-down"></ion-icon>
                 </div>
@@ -986,6 +982,30 @@
             </div>
 
             <ul class="project-list">
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="#" onclick="openModal('modal2025_11')">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./comparador.png" alt="Web Scraping Retail" loading="lazy" class="proyectos" />
+                  </figure>
+                  <h3 class="project-title">Web Scrapping de Precios Retail</h3>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="automation">
+                <a href="#" onclick="openModal('modal2025_12')">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/whatsapp_automation.png" alt="WhatsApp Automation" loading="lazy" class="proyectos" />
+                  </figure>
+                  <h3 class="project-title">Envío Masivo de Mensajes por WhatsApp</h3>
+                </a>
+              </li>
 
               <li class="project-item active" data-filter-item data-category="web development"  >
                 <a href="#" onclick="openModal('modal2025_7')">
@@ -1009,8 +1029,7 @@
                   <h3 class="project-title">App de Fuga de Clientes</h3>
                 </a>
             </li>  
-              <!-- Proyecto 3 -->
-            <li class="project-item active" data-filter-item data-category="machine learning">
+              <li class="project-item active" data-filter-item data-category="machine learning">
               <a href="#" onclick="openModal('modal2025_9')">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1022,7 +1041,6 @@
               </a>
             </li>
             
-            <!-- Proyecto 4 -->
             <li class="project-item active" data-filter-item data-category="data science">
               <a href="#" onclick="openModal('modal2025_10')">
                 <figure class="project-img">
@@ -1036,13 +1054,43 @@
             </li>
 
 
-              <!-- Para más proyectos agregar -->
+              </ul>
 
-            </ul>
+            <div id="modal2025_11" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2025_11')">×</span>
+                <div class="modal-left">
+                  <img src="./assets/images/webscraping.jpg" alt="Vista Proyecto Web Scraping" width="100%" />
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">Web Scrapping de Precios Retail</h2>
+                  <p>Este proyecto aborda directamente la **asimetría de información**, una de las fallas de mercado más comunes. Mediante la extracción de datos de precios de múltiples tiendas retail, se crea una plataforma centralizada que otorga a los consumidores poder de decisión, permitiéndoles comparar y elegir la mejor oferta. Esto fomenta la competencia y la transparencia en el mercado.</p>
+                  <p><b>Tecnologías usadas:</b></p>
+                  <p style="color: #1E90FF;">#Python #Flask #Selenium #BeautifulSoup #Requests</p>
+                  <a href="https://github.com/JPretellEco" target="_blank" style="color: #00FFFF;">🔗 Ir al repositorio</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="modal2025_12" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2025_12')">×</span>
+                <div class="modal-left">
+                  <img src="./assets/images/whatsapp_automation.png" alt="Vista Proyecto WhatsApp" width="100%" />
+                </div>
+                <div class="modal-right">
+                  <h2 style="color: white;">Envío Masivo de Mensajes por WhatsApp</h2>
+                  <p>Script de automatización desarrollado en Python que permite el envío masivo y programado de mensajes de WhatsApp a una lista de contactos. Ideal para campañas de marketing, notificaciones o comunicaciones directas, utilizando la automatización del navegador para interactuar con WhatsApp Web.</p>
+                  <p><b>Tecnologías usadas:</b></p>
+                  <p style="color: #1E90FF;">#Python #Selenium</p>
+                  <a href="https://github.com/JPretellEco" target="_blank" style="color: #00FFFF;">🔗 Ir al repositorio</a>
+                </div>
+              </div>
+            </div>
 
             <div id="modal2025_7" class="modal">
               <div class="modal-content">
-                <span class="close" onclick="closeModal('modal2025_7')">&times;</span>
+                <span class="close" onclick="closeModal('modal2025_7')">×</span>
                 <div class="modal-left">
                   <video src="./WhatsApp Video 2025-05-08 at 3.48.05 AM.mp4 "  muted autoplay loop ></video>
                 </div>
@@ -1055,7 +1103,6 @@
                 </div>
               </div>
           </div>
-          <!-- A QUÍ DEBES AGREGAR EL TEXTO DE CADA PROYECTO-->
           <div id="modal2025_8" class="modal">
               <div class="modal-content">
                 <span class="close" onclick="closeModal('modal2025_8')">×</span>
@@ -1073,10 +1120,9 @@
                 </div>
               </div>
           </div> 
-            <!-- Modal Proyecto 3 -->
             <div id="modal2025_9" class="modal">
               <div class="modal-content">
-                <span class="close" onclick="closeModal('modal2025_9')">&times;</span>
+                <span class="close" onclick="closeModal('modal2025_9')">×</span>
                 <div class="modal-left">
                   <img src="./proyecto3.png" alt="Vista Proyecto 3" width="100%" />
                 </div>
@@ -1090,10 +1136,9 @@
               </div>
             </div>
             
-            <!-- Modal Proyecto 4 -->
             <div id="modal2025_10" class="modal">
               <div class="modal-content">
-                <span class="close" onclick="closeModal('modal2025_10')">&times;</span>
+                <span class="close" onclick="closeModal('modal2025_10')">×</span>
                 <div class="modal-left">
                   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/uFHXtHM8HbNUY30yLlNQ49/Untitled?node-id=72-1685&starting-point-node-id=72%3A1685&embed-host=share" allowfullscreen></iframe>
                 </div>
@@ -1489,6 +1534,7 @@
     <script src="particles.js"></script>
   </body>
 </html>
+
 
 
 
